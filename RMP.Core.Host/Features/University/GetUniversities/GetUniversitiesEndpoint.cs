@@ -1,9 +1,9 @@
 using Carter;
 using MediatR;
-using RMP.Host.Extensions;
-using RMP.Host.Mapper;
+using RMP.Core.Host.Extensions;
+using RMP.Core.Host.Mapper;
 
-namespace RMP.Host.Features.University.GetUniversities;
+namespace RMP.Core.Host.Features.University.GetUniversities;
 
 public sealed record GetUniversitiesResponse(
     Guid Id,

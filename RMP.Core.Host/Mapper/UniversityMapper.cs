@@ -1,11 +1,11 @@
 using Riok.Mapperly.Abstractions;
-using RMP.Host.Entities;
-using RMP.Host.Features.University.CreateUniversity;
-using RMP.Host.Features.University.GetUniversities;
-using RMP.Host.Features.University.GetUniversityById;
-using RMP.Host.Features.University.UpdateUniversity;
+using RMP.Core.Host.Entities;
+using RMP.Core.Host.Features.University.CreateUniversity;
+using RMP.Core.Host.Features.University.GetUniversities;
+using RMP.Core.Host.Features.University.GetUniversityById;
+using RMP.Core.Host.Features.University.UpdateUniversity;
 
-namespace RMP.Host.Mapper;
+namespace RMP.Core.Host.Mapper;
 
 [Mapper]
 public static partial class UniversityMapper

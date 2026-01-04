@@ -1,6 +1,6 @@
-using RMP.Host.Abstarctions.Errors;
+using RMP.Core.Host.Abstractions.Errors;
 
-namespace RMP.Host.Features.User;
+namespace RMP.Core.Host.Features.User;
 
 public static class UserErrors
 {

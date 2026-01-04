@@ -1,9 +1,9 @@
 using Carter;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
-using RMP.Host.Extensions;
+using RMP.Core.Host.Extensions;
 
-namespace RMP.Host.Features.University.CreateUniversity;
+namespace RMP.Core.Host.Features.University.CreateUniversity;
 
 public sealed record CreateUniversityResponse(Guid Id);
 

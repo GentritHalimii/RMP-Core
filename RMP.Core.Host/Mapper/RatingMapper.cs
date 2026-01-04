@@ -1,10 +1,11 @@
 using Riok.Mapperly.Abstractions;
 using RMP.Core.Host.Entities;
-using RMP.Core.Host.Features.Rating.GetRateProfessors;
+using RMP.Core.Host.Features.News.GetNewsById;
 using RMP.Core.Host.Features.Rating.GetRateProfessorsById;
+using RMP.Core.Host.Features.Rating.GetRateProfessors;
 using RMP.Core.Host.Features.Rating.GetRateProfessorsByProfessorId;
-using RMP.Core.Host.Features.Rating.GetRateProfessorsByStudentId;
 using RMP.Core.Host.Features.Rating.GetRateUniversities;
+using RMP.Core.Host.Features.Rating.GetRateProfessorsByStudentId;
 
 namespace RMP.Core.Host.Mapper;
 

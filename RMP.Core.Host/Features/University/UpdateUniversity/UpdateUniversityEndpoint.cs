@@ -1,9 +1,9 @@
 using Carter;
 using MediatR;
-using RMP.Host.Extensions;
-using RMP.Host.Mapper;
+using RMP.Core.Host.Extensions;
+using RMP.Core.Host.Mapper;
 
-namespace RMP.Host.Features.University.UpdateUniversity;
+namespace RMP.Core.Host.Features.University.UpdateUniversity;
 
 public sealed record UpdateUniversityRequest(
     Guid Id,

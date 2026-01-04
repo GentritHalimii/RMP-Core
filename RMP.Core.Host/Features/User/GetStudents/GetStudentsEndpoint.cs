@@ -1,8 +1,8 @@
 using Carter;
 using MediatR;
-using RMP.Host.Extensions;
+using RMP.Core.Host.Extensions;
 
-namespace RMP.Host.Features.User.GetStudents;
+namespace RMP.Core.Host.Features.User.GetStudents;
 
 public sealed record GetStudentsResponse(
     int Id,

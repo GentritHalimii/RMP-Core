@@ -1,9 +1,9 @@
 using Carter;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
-using RMP.Host.Extensions;
+using RMP.Core.Host.Extensions;
 
-namespace RMP.Host.Features.Department.CreateDepartment;
+namespace RMP.Core.Host.Features.Department.CreateDepartment;
 
 public sealed record CreateDepartmentResponse(Guid Id);
 

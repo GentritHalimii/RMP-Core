@@ -2,7 +2,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace RMP.Host.Entities.Identity;
+namespace RMP.Core.Host.Entities.Identity;
 
 public class UserToken : IdentityUserToken<int>;
 

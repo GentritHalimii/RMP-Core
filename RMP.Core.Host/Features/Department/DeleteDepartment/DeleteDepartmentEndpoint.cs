@@ -1,8 +1,8 @@
 using Carter;
 using MediatR;
-using RMP.Host.Extensions;
+using RMP.Core.Host.Extensions;
 
-namespace RMP.Host.Features.Department.DeleteDepartment;
+namespace RMP.Core.Host.Features.Department.DeleteDepartment;
 
 public sealed record DeleteDepartmentResponse(bool IsSuccess);
 

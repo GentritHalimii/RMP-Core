@@ -2,11 +2,11 @@ using Microsoft.EntityFrameworkCore;
 using RMP.Core.Host.Abstractions.CQRS;
 using RMP.Core.Host.Abstractions.ResultResponse;
 using RMP.Core.Host.Database;
-using RMP.Host.Abstarctions.CQRS;
-using RMP.Host.Abstarctions.ResultResponse;
-using RMP.Host.Database;
+using RMP.Core.Host.Abstractions.CQRS;
+using RMP.Core.Host.Abstractions.ResultResponse;
+using RMP.Core.Host.Database;
 
-namespace RMP.Host.Features.News.DeleteNews;
+namespace RMP.Core.Host.Features.News.DeleteNews;
 
 public sealed record DeleteNewsCommand(Guid Id) : ICommand<Result<DeleteNewsResult>>;
 public sealed record DeleteNewsResult(bool IsSuccess);

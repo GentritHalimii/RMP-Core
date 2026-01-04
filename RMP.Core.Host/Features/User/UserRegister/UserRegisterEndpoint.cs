@@ -1,9 +1,9 @@
 using Carter;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
-using RMP.Host.Extensions;
+using RMP.Core.Host.Extensions;
 
-namespace RMP.Host.Features.User.UserRegister;
+namespace RMP.Core.Host.Features.User.UserRegister;
 
 public sealed record UserRegisterResponse(Guid Id);
 

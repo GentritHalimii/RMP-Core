@@ -1,6 +1,6 @@
-using RMP.Host.Abstarctions.Errors;
+using RMP.Core.Host.Abstractions.Errors;
 
-namespace RMP.Host.Features.University;
+namespace RMP.Core.Host.Features.University;
 
 public static class UniversityErrors
 {

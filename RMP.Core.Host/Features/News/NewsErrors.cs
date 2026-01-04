@@ -1,6 +1,6 @@
-using RMP.Host.Abstarctions.Errors;
+using RMP.Core.Host.Abstractions.Errors;
 
-namespace RMP.Host.Features.News;
+namespace RMP.Core.Host.Features.News;
 
 public static class NewsErrors
 {

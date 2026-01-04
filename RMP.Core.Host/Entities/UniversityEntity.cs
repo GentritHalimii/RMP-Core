@@ -1,3 +1,5 @@
+using RMP.Core.Host.Entities.Identity;
+
 namespace RMP.Core.Host.Entities;
 
 public class UniversityEntity : BaseEntity

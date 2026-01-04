@@ -1,10 +1,10 @@
 using FluentValidation;
-using RMP.Host.Abstarctions.CQRS;
-using RMP.Host.Abstarctions.ResultResponse;
-using RMP.Host.Database;
-using RMP.Host.Mapper;
+using RMP.Core.Host.Abstractions.CQRS;
+using RMP.Core.Host.Abstractions.ResultResponse;
+using RMP.Core.Host.Database;
+using RMP.Core.Host.Mapper;
 
-namespace RMP.Host.Features.News.CreateNews;
+namespace RMP.Core.Host.Features.News.CreateNews;
 
 public sealed record CreateNewsCommand(
     Guid Id,

@@ -1,10 +1,9 @@
 using Carter;
 using MediatR;
 using RMP.Core.Host.Extensions;
-using RMP.Host.Extensions;
-using RMP.Host.Mapper;
+using RMP.Core.Host.Mapper;
 
-namespace RMP.Host.Features.News.GetThreeLatestCreatedNews;
+namespace RMP.Core.Host.Features.News.GetThreeLatestCreatedNews;
 
 
 public sealed record GetThreeLatestCreatedNewsResponse(

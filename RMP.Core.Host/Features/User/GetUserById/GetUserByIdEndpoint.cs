@@ -1,9 +1,9 @@
 using Carter;
 using MediatR;
-using RMP.Host.Extensions;
-using RMP.Host.Mapper;
+using RMP.Core.Host.Extensions;
+using RMP.Core.Host.Mapper;
 
-namespace RMP.Host.Features.User.GetUserById;
+namespace RMP.Core.Host.Features.User.GetUserById;
 
 public sealed record GetUserByIdResponse(
     int Id,

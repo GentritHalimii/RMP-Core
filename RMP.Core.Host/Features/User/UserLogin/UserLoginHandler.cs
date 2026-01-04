@@ -1,13 +1,13 @@
 using FluentValidation;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using RMP.Host.Abstarctions.CQRS;
-using RMP.Host.Abstarctions.ResultResponse;
-using RMP.Host.Database;
-using RMP.Host.Entities.Identity;
-using RMP.Host.Features.User.Common;
+using RMP.Core.Host.Abstractions.CQRS;
+using RMP.Core.Host.Abstractions.ResultResponse;
+using RMP.Core.Host.Database;
+using RMP.Core.Host.Entities.Identity;
+using RMP.Core.Host.Features.User.Common;
 
-namespace RMP.Host.Features.User.UserLogin;
+namespace RMP.Core.Host.Features.User.UserLogin;
 
 public sealed record LoginUserCommand(
     string Email,

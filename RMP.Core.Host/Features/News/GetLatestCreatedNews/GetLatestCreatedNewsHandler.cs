@@ -2,12 +2,12 @@ using Microsoft.EntityFrameworkCore;
 using RMP.Core.Host.Abstractions.CQRS;
 using RMP.Core.Host.Abstractions.ResultResponse;
 using RMP.Core.Host.Database;
-using RMP.Host.Abstarctions.CQRS;
-using RMP.Host.Abstarctions.ResultResponse;
-using RMP.Host.Database;
-using RMP.Host.Mapper;
+using RMP.Core.Host.Abstractions.CQRS;
+using RMP.Core.Host.Abstractions.ResultResponse;
+using RMP.Core.Host.Database;
+using RMP.Core.Host.Mapper;
 
-namespace RMP.Host.Features.News.GetLatestCreatedNews;
+namespace RMP.Core.Host.Features.News.GetLatestCreatedNews;
 
 public sealed record GetLatestCreatedNewsQuery() : IQuery<Result<GetLatestCreatedNewsResult>>;
 

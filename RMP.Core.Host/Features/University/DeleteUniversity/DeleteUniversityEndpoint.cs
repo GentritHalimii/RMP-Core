@@ -1,8 +1,8 @@
 using Carter;
 using MediatR;
-using RMP.Host.Extensions;
+using RMP.Core.Host.Abstractions;
 
-namespace RMP.Host.Features.University.DeleteUniversity;
+namespace RMP.Core.Host.Features.University.DeleteUniversity;
 
 public sealed record DeleteUniversityResponse(bool IsSuccess);
 

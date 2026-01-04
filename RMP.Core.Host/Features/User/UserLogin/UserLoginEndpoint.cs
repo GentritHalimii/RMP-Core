@@ -1,8 +1,8 @@
 using Carter;
 using MediatR;
-using RMP.Host.Extensions;
+using RMP.Core.Host.Extensions;
 
-namespace RMP.Host.Features.User.UserLogin;
+namespace RMP.Core.Host.Features.User.UserLogin;
 
 public sealed record UserLoginRequest(string Email, string Password, bool RememberMe);
 public sealed record UserLoginResponse(string Token, int UserId, string Email, Guid DepartmentId, IEnumerable<string> Roles);

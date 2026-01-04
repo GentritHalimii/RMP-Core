@@ -1,11 +1,11 @@
 using FluentValidation;
 using Microsoft.EntityFrameworkCore;
-using RMP.Host.Abstarctions.CQRS;
-using RMP.Host.Abstarctions.ResultResponse;
-using RMP.Host.Database;
-using RMP.Host.Mapper;
+using RMP.Core.Host.Abstractions.CQRS;
+using RMP.Core.Host.Abstractions.ResultResponse;
+using RMP.Core.Host.Database;
+using RMP.Core.Host.Mapper;
 
-namespace RMP.Host.Features.University.UpdateUniversity;
+namespace RMP.Core.Host.Features.University.UpdateUniversity;
 public sealed record UpdateUniversityCommand(
     Guid Id,
     string Name,

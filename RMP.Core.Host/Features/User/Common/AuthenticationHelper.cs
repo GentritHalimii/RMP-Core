@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
-using RMP.Host.Entities.Identity;
+using RMP.Core.Host.Entities.Identity;
 
-namespace RMP.Host.Features.User.Common;
+namespace RMP.Core.Host.Features.User.Common;
 
 public static class AuthenticationHelper
 {

@@ -1,10 +1,9 @@
 using Carter;
 using MediatR;
 using RMP.Core.Host.Extensions;
-using RMP.Host.Extensions;
-using RMP.Host.Mapper;
+using RMP.Core.Host.Mapper;
 
-namespace RMP.Host.Features.News.GetLatestCreatedNews;
+namespace RMP.Core.Host.Features.News.GetLatestCreatedNews;
 
 public sealed record GetLatestCreatedNewsResponse(
     Guid Id,

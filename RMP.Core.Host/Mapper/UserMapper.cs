@@ -1,10 +1,10 @@
 using Riok.Mapperly.Abstractions;
-using RMP.Host.Entities.Identity;
-using RMP.Host.Features.User.GetAdmins;
-using RMP.Host.Features.User.GetStudents;
-using RMP.Host.Features.User.GetUserById;
+using RMP.Core.Host.Entities.Identity;
+using RMP.Core.Host.Features.User.GetAdmins;
+using RMP.Core.Host.Features.User.GetStudents;
+using RMP.Core.Host.Features.User.GetUserById;
 
-namespace RMP.Host.Mapper;
+namespace RMP.Core.Host.Mapper;
 
 [Mapper]
 public static partial class UserMapper

@@ -1,6 +1,6 @@
-using RMP.Host.Entities.Identity;
+using RMP.Core.Host.Entities.Identity;
 
-namespace RMP.Host.Entities;
+namespace RMP.Core.Host.Entities;
 
 public class DepartmentEntity : BaseEntity
 {

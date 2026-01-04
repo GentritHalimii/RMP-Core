@@ -1,11 +1,11 @@
 using FluentValidation;
 using Microsoft.EntityFrameworkCore;
-using RMP.Host.Abstarctions.CQRS;
-using RMP.Host.Abstarctions.ResultResponse;
-using RMP.Host.Database;
-using RMP.Host.Mapper;
+using RMP.Core.Host.Abstractions.CQRS;
+using RMP.Core.Host.Abstractions.ResultResponse;
+using RMP.Core.Host.Database;
+using RMP.Core.Host.Mapper;
 
-namespace RMP.Host.Features.Department.UpdateDepartment;
+namespace RMP.Core.Host.Features.Department.UpdateDepartment;
 public sealed record UpdateDepartmentCommand(
     Guid Id,
     string Name,

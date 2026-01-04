@@ -1,10 +1,10 @@
 using Carter;
 using MediatR;
-using RMP.Host.Extensions;
-using RMP.Host.Mapper;
+using RMP.Core.Host.Extensions;
+using RMP.Core.Host.Mapper;
 
 
-namespace RMP.Host.Features.News.GetNews;
+namespace RMP.Core.Host.Features.News.GetNews;
 
 
 public sealed record GetNewsResponse(

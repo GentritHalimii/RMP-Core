@@ -1,8 +1,8 @@
 using Carter;
 using MediatR;
-using RMP.Host.Extensions;
+using RMP.Core.Host.Extensions;
 
-namespace RMP.Host.Features.News.GetRecentNewsCount;
+namespace RMP.Core.Host.Features.News.GetRecentNewsCount;
 
 public sealed class GetRecentNewsCountEndpoint : ICarterModule
 {

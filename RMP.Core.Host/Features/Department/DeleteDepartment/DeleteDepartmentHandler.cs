@@ -1,9 +1,9 @@
 using Microsoft.EntityFrameworkCore;
-using RMP.Host.Abstarctions.CQRS;
-using RMP.Host.Abstarctions.ResultResponse;
-using RMP.Host.Database;
+using RMP.Core.Host.Abstractions.CQRS;
+using RMP.Core.Host.Abstractions.ResultResponse;
+using RMP.Core.Host.Database;
 
-namespace RMP.Host.Features.Department.DeleteDepartment;
+namespace RMP.Core.Host.Features.Department.DeleteDepartment;
 public sealed record DeleteDepartmentCommand(Guid Id) : ICommand<Result<DeleteDepartmentResult>>;
 public sealed record DeleteDepartmentResult(bool IsSuccess);
 

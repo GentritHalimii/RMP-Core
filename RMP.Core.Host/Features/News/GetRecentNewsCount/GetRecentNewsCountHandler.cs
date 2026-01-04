@@ -1,9 +1,9 @@
 using Microsoft.EntityFrameworkCore;
-using RMP.Host.Abstarctions.CQRS;
-using RMP.Host.Abstarctions.ResultResponse;
-using RMP.Host.Database;
+using RMP.Core.Host.Abstractions.CQRS;
+using RMP.Core.Host.Abstractions.ResultResponse;
+using RMP.Core.Host.Database;
 
-namespace RMP.Host.Features.News.GetRecentNewsCount;
+namespace RMP.Core.Host.Features.News.GetRecentNewsCount;
 
 public sealed record GetRecentNewsCountQuery() : IQuery<Result<IEnumerable<DayNewsCountResult>>>;
 

@@ -2,9 +2,9 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
 using Microsoft.IdentityModel.Tokens;
-using RMP.Host.Entities.Identity;
+using RMP.Core.Host.Entities.Identity;
 
-namespace RMP.Host.Features.User.Common;
+namespace RMP.Core.Host.Features.User.Common;
 
 public class JwtTokenGenerator(IConfiguration configuration) : ITokenGenerator
 {

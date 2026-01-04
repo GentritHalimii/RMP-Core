@@ -1,8 +1,8 @@
 using Carter;
 using MediatR;
-using RMP.Host.Extensions;
+using RMP.Core.Host.Extensions;
 
-namespace RMP.Host.Features.User.GetAdmins;
+namespace RMP.Core.Host.Features.User.GetAdmins;
 
 public sealed record GetAdminsResponse(
     int Id,

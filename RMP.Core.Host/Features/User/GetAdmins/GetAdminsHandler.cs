@@ -1,11 +1,11 @@
 using Microsoft.EntityFrameworkCore;
-using RMP.Host.Abstarctions.CQRS;
-using RMP.Host.Abstarctions.ResultResponse;
-using RMP.Host.Database;
-using RMP.Host.Features.User.Common;
-using RMP.Host.Mapper;
+using RMP.Core.Host.Abstractions.CQRS;
+using RMP.Core.Host.Abstractions.ResultResponse;
+using RMP.Core.Host.Database;
+using RMP.Core.Host.Features.User.Common;
+using RMP.Core.Host.Mapper;
 
-namespace RMP.Host.Features.User.GetAdmins;
+namespace RMP.Core.Host.Features.User.GetAdmins;
 
 public sealed record GetAdminsQuery() : IQuery<Result<IEnumerable<GetAdminsResult>>>;
 public sealed record GetAdminsResult(

@@ -1,9 +1,9 @@
 using Microsoft.EntityFrameworkCore;
-using RMP.Host.Abstarctions.CQRS;
-using RMP.Host.Abstarctions.ResultResponse;
-using RMP.Host.Database;
+using RMP.Core.Host.Abstractions.CQRS;
+using RMP.Core.Host.Abstractions.ResultResponse;
+using RMP.Core.Host.Database;
 
-namespace RMP.Host.Features.University.DeleteUniversity;
+namespace RMP.Core.Host.Features.University.DeleteUniversity;
 public sealed record DeleteUniversityCommand(Guid Id) : ICommand<Result<DeleteUniversityResult>>;
 public sealed record DeleteUniversityResult(bool IsSuccess);
 

@@ -1,9 +1,9 @@
 using Carter;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
-using RMP.Host.Extensions;
+using RMP.Core.Host.Extensions;
 
-namespace RMP.Host.Features.News.CreateNews;
+namespace RMP.Core.Host.Features.News.CreateNews;
 
 public sealed record CreateNewsResponse(Guid Id);
 

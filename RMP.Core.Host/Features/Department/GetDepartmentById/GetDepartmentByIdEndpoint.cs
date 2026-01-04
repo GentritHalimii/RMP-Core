@@ -1,9 +1,9 @@
 using Carter;
 using MediatR;
-using RMP.Host.Extensions;
-using RMP.Host.Mapper;
+using RMP.Core.Host.Extensions;
+using RMP.Core.Host.Mapper;
 
-namespace RMP.Host.Features.Department.GetDepartmentById;
+namespace RMP.Core.Host.Features.Department.GetDepartmentById;
 
 public sealed record GetDepartmentByIdResponse(
     Guid Id,

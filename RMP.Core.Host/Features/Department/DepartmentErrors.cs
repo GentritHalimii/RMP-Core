@@ -1,6 +1,6 @@
-using RMP.Host.Abstarctions.Errors;
+using RMP.Core.Host.Abstractions.Errors;
 
-namespace RMP.Host.Features.Department;
+namespace RMP.Core.Host.Features.Department;
 
 public static class DepartmentErrors
 {

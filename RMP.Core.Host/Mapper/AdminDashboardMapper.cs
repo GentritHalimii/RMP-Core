@@ -1,11 +1,11 @@
 using Riok.Mapperly.Abstractions;
-using RMP.Host.Entities;
-using RMP.Host.Features.AdminDashboard.GetHighestRatedProfessor;
-using RMP.Host.Features.AdminDashboard.GetOldestUniversity;
-using RMP.Host.Features.AdminDashboard.GetHighestRatedUniversity;
+using RMP.Core.Host.Entities;
+using RMP.Core.Host.Features.AdminDashboard.GetHighestRatedProfessor;
+using RMP.Core.Host.Features.AdminDashboard.GetOldestUniversity;
+using RMP.Core.Host.Features.AdminDashboard.GetHighestRatedUniversity;
 
 
-namespace RMP.Host.Mapper;
+namespace RMP.Core.Host.Mapper;
 
 [Mapper]
 public static partial class AdminDashboardMapper
