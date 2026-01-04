@@ -23,6 +23,9 @@ bld/
 .vs/
 .vscode/
 
+/.vs/
+../.vs
+
 [Tt]est[Rr]esult*/
 [Bb]uild[Ll]og.*
 
