@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+option csharp_namespace = "RMP.Host";
+
+service PredictionService {
+  rpc PredictToxicity (PredictionRequest) returns (PredictionReply);
+}
+
+message PredictionRequest {
+  string sentiment_text = 1;
+}
+
+message PredictionReply {
+  bool is_toxic = 1;
+  float probability = 2;
+  string message = 3;
+}

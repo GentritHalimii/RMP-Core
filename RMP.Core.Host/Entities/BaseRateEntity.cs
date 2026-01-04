@@ -1,6 +1,4 @@
-using RMP.Host.Entities.Identity;
-
-namespace RMP.Host.Entities;
+namespace RMP.Core.Host.Entities;
 
 public abstract class BaseRateEntity : BaseEntity
 {

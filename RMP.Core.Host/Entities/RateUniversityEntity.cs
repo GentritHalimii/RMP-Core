@@ -1,4 +1,4 @@
-namespace RMP.Host.Entities;
+namespace RMP.Core.Host.Entities;
 
 public class RateUniversityEntity : BaseRateEntity
 {

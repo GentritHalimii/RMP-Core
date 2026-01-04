@@ -1,5 +1,5 @@
 using Riok.Mapperly.Abstractions;
-using RMP.Host.Entities;
+using RMP.Core.Host.Entities;
 using RMP.Host.Features.News.CreateNews;
 using RMP.Host.Features.News.GetNews;
 using RMP.Host.Features.News.GetAllNewsDescByDate;
