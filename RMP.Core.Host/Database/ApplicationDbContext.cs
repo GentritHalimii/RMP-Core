@@ -1,11 +1,12 @@
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using RMP.Core.Host.Entities;
+using RMP.Host.Entities.Identity;
 
 namespace RMP.Core.Host.Database;
 
 public class ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
-    : IdentityDbContext(options)
+    : IdentityDbContext<UserEntity, Role, int, UserClaim, UserRole, UserLogin, RoleClaim, UserToken>(options)
 {
 	public DbSet<UniversityEntity> Universities { get; set; }
 	public DbSet<ProfessorEntity> Professors { get; set; }
@@ -17,10 +18,38 @@ public class ApplicationDbContext(DbContextOptions<ApplicationDbContext> options
 	protected override void OnModelCreating(ModelBuilder modelBuilder)
 	{
 		base.OnModelCreating(modelBuilder);
-		
+		modelBuilder.ApplyConfiguration(new UserConfiguration());
+		modelBuilder.ApplyConfiguration(new RoleConfiguration());
+		modelBuilder.ApplyConfiguration(new RoleConfiguration.RoleSeedData());
+		modelBuilder.Entity<UserRole>().ToTable("UserRoles");
+		modelBuilder.Entity<RoleClaim>().ToTable("RoleClaims");
+		modelBuilder.Entity<UserClaim>().ToTable("UserClaims");
+		modelBuilder.Entity<UserLogin>().ToTable("UserLogins");
+		modelBuilder.Entity<UserToken>().ToTable("UserTokens");
 		modelBuilder.Entity<RateUniversityEntity>().ToTable("RateUniversities");
 		modelBuilder.Entity<RateProfessorEntity>().ToTable("RateProfessors");
-		
+		modelBuilder.Entity<UniversityEntity>().ToTable("Universities");
+
+		modelBuilder.Entity<UniversityEntity>()
+	.HasKey(pk => new { pk.Id });
+		modelBuilder.Entity<DepartmentEntity>()
+			.HasKey(pk => new { pk.Id });
+		modelBuilder.Entity<ProfessorEntity>()
+			.HasKey(pk => new { pk.Id });
+
+		// === UserEntity Relationships === //
+		modelBuilder.Entity<UserEntity>()
+			.HasOne(u => u.University)
+			.WithMany()
+			.HasForeignKey(u => u.UniversityId)
+			.OnDelete(DeleteBehavior.Restrict);
+
+		modelBuilder.Entity<UserEntity>()
+			.HasOne(u => u.Department)
+			.WithMany(d => d.Users)
+			.HasForeignKey(u => u.DepartmentId)
+			.OnDelete(DeleteBehavior.Restrict);
+
 		// === RateUniversityEntity Relationships === //
 		modelBuilder.Entity<RateUniversityEntity>()
 			.HasOne(r => r.User)
