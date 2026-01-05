@@ -9,6 +9,8 @@ public class ApplicationDbContext(DbContextOptions<ApplicationDbContext> options
 {
 	public DbSet<UniversityEntity> Universities { get; set; }
 	public DbSet<ProfessorEntity> Professors { get; set; }
+	public DbSet<CourseEntity> Courses { get; set; }
+	public DbSet<ProfessorCourseEntity> ProfessorCourses { get; set; }
 	public DbSet<RateUniversityEntity> RateUniversities { get; set; }
 	public DbSet<RateProfessorEntity> RateProfessors { get; set; }
 
