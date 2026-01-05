@@ -1,7 +1,6 @@
-﻿namespace RMP.Core.Host.Entities
+﻿namespace RMP.Core.Host.Entities;
+
+public class BaseEntity
 {
-	public class BaseEntity
-	{
-		public Guid Id { get; set; }
-	}
+	public Guid Id { get; set; }
 }
