@@ -5,7 +5,6 @@ using RMP.Core.Host.Mapper;
 
 namespace RMP.Core.Host.Features.News.GetThreeLatestCreatedNews;
 
-
 public sealed record GetThreeLatestCreatedNewsResponse(
     Guid Id,
     string Title,

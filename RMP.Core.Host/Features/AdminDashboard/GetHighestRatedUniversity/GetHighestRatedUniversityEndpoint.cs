@@ -1,11 +1,13 @@
-
 using Carter;
 using MediatR;
 using RMP.Core.Host.Extensions;
 using RMP.Core.Host.Mapper;
+
 namespace RMP.Core.Host.Features.AdminDashboard.GetHighestRatedUniversity;
+
 public sealed record GetHighestRatedUniversityResponse(
     Guid UniversityId);
+
 public sealed class GetHighestRatedUniversityEndpoint : ICarterModule
 {
     public void AddRoutes(IEndpointRouteBuilder app)
@@ -13,6 +15,7 @@ public sealed class GetHighestRatedUniversityEndpoint : ICarterModule
         app.MapGet("api/AdminDashboard/HighestRatedUniversity", async (ISender sender) =>
             {
                 var result = await sender.Send(new GetHighestRatedUniversityQuery());
+
                 return result.Match(
                     onSuccess: () =>
                     {

@@ -1,4 +1,3 @@
-
 using Carter;
 using MediatR;
 using RMP.Core.Host.Extensions;

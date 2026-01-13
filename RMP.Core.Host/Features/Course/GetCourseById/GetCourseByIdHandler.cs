@@ -5,6 +5,7 @@ using RMP.Core.Host.Database;
 using RMP.Core.Host.Mapper;
 
 namespace RMP.Core.Host.Features.Course.GetCourseById;
+
 public sealed record GetCourseByIdQuery(Guid Id) : IQuery<Result<GetCourseByIdResult>>;
 
 public sealed record GetCourseByIdResult(

@@ -1,11 +1,10 @@
-
 using Microsoft.EntityFrameworkCore;
 using RMP.Core.Host.Abstractions.CQRS;
 using RMP.Core.Host.Abstractions.ResultResponse;
 using RMP.Core.Host.Database;
 using RMP.Core.Host.Mapper;
 
-namespace RMP.Core.Host.Features.AdminDashboard.GetHighestRatedProfessor;
+namespace RMP.Core.Host.Features.AdminDashboard.SortFromHighestRatedProfessor;
 
 public sealed record SortFromHighestRatedProfessorQuery() : IQuery<Result<GetHighestRatedProfessorResult>>;
 

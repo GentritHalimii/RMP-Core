@@ -1,11 +1,9 @@
-
 using Microsoft.EntityFrameworkCore;
 using RMP.Core.Host.Abstractions.CQRS;
 using RMP.Core.Host.Abstractions.ResultResponse;
 using RMP.Core.Host.Database;
 
 namespace RMP.Core.Host.Features.AdminDashboard.GetProfessorCount;
-
 
 public sealed record GetProfessorCountQuery() : IQuery<Result<int>>;
 

@@ -1,6 +1,6 @@
 using Carter;
 using MediatR;
-using RMP.Core.Host.Abstractions;
+using RMP.Core.Host.Extensions;
 
 namespace RMP.Core.Host.Features.University.DeleteUniversity;
 

@@ -1,6 +1,42 @@
-@RMP.Core.Host_HostAddress = http://localhost:5018
+@baseUrl = http://localhost:44364
+@uniId = 3fa85f64-5717-4562-b3fc-2c963f66afa6
 
-GET {{RMP.Core.Host_HostAddress}}/weatherforecast/
+### Update University
+PUT {{baseUrl}}/api/UpdateUniversity
+Accept: application/json
+Content-Type: application/json
+
+{
+  "id": "{{uniId}}",
+  "name": "UBT",
+  "establishedYear": 2001,
+  "description": "UBT is an established and innovative institution of higher education in Kosovo which combines the advantages of internationally recognized universities. ",
+  "staffNumber": 500,
+  "studentsNumber": 10000,
+  "coursesNumber": 120
+}
+
+### GetUniversityById
+GET {{baseUrl}}/api/GetUniversityById/{{uniId}}
 Accept: application/json
 
-###
+### GetAllUniversities
+GET {{baseUrl}}/api/Universities
+Accept: application/json
+
+### DeleteUniversity
+DELETE {{baseUrl}}/api/DeleteUniversity/0de38343-101b-4573-af13-1f4d120e2b1f
+Accept: application/json
+
+### Create University
+POST {{baseUrl}}/api/CreateUniversity
+Content-Type: multipart/form-data
+
+id=3fa25g64-5787-4162-b3fc-2c963f66afa7
+name=emri
+establishedYear=123
+description=tersdf
+staffNumber=123
+studentsNumber=123
+coursesNumber=123
+

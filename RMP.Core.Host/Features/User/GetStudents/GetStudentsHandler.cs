@@ -8,6 +8,7 @@ using RMP.Core.Host.Mapper;
 namespace RMP.Core.Host.Features.User.GetStudents;
 
 public sealed record GetStudentsQuery() : IQuery<Result<IEnumerable<GetStudentsResult>>>;
+
 public sealed record GetStudentsResult(
     int Id,
     string Name,
