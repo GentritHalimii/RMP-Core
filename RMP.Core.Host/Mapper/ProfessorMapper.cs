@@ -6,6 +6,7 @@ using RMP.Core.Host.Features.Professor.UpdateProfessor;
 using RMP.Core.Host.Features.Professor.GetProfessors;
 using RMP.Core.Host.Features.Professor.GetProfessorsByDepartment;
 using RMP.Core.Host.Features.Professor.GetProfessorById;
+
 using RMP.Core.Host.Features.Professor.GetProfessors;
 
 namespace RMP.Core.Host.Mapper;
