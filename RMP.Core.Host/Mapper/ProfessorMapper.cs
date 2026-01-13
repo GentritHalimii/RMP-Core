@@ -1,13 +1,10 @@
-﻿
-using Riok.Mapperly.Abstractions;
+﻿using Riok.Mapperly.Abstractions;
 using RMP.Core.Host.Entities;
 using RMP.Core.Host.Features.Professor.CreateProfessor;
 using RMP.Core.Host.Features.Professor.UpdateProfessor;
 using RMP.Core.Host.Features.Professor.GetProfessors;
 using RMP.Core.Host.Features.Professor.GetProfessorsByDepartment;
 using RMP.Core.Host.Features.Professor.GetProfessorById;
-
-using RMP.Core.Host.Features.Professor.GetProfessors;
 
 namespace RMP.Core.Host.Mapper;
 

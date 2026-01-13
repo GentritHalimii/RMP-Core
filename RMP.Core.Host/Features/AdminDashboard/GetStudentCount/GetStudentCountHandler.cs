@@ -6,7 +6,6 @@ using RMP.Core.Host.Features.User.Common;
 
 namespace RMP.Core.Host.Features.AdminDashboard.GetStudentCount;
 
-
 public sealed record GetStudentCountQuery() : IQuery<Result<int>>;
 
 internal sealed class GetStudentCountQueryHandler(ApplicationDbContext dbContext) : 

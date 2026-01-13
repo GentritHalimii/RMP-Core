@@ -1,4 +1,3 @@
-
 using Microsoft.EntityFrameworkCore;
 using RMP.Core.Host.Abstractions.CQRS;
 using RMP.Core.Host.Abstractions.ResultResponse;

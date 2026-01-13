@@ -4,6 +4,7 @@ using RMP.Core.Host.Abstractions.ResultResponse;
 using RMP.Core.Host.Database;
 
 namespace RMP.Core.Host.Features.Course.DeleteCourse;
+
 public sealed record DeleteCourseCommand(Guid Id) : ICommand<Result<DeleteCourseResult>>;
 public sealed record DeleteCourseResult(bool IsSuccess);
 

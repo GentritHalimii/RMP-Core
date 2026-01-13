@@ -6,6 +6,7 @@ using RMP.Core.Host.Database;
 using RMP.Core.Host.Mapper;
 
 namespace RMP.Core.Host.Features.Course.UpdateCourse;
+
 public sealed record UpdateCourseCommand(
     Guid Id,
     string Name,

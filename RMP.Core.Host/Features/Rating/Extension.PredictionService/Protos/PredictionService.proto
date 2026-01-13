@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-option csharp_namespace = "RMP.Host";
+option csharp_namespace = "RMP.Core.Host";
 
 service PredictionService {
   rpc PredictToxicity (PredictionRequest) returns (PredictionReply);

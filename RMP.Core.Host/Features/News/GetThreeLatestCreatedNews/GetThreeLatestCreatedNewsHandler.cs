@@ -9,7 +9,6 @@ namespace RMP.Core.Host.Features.News.GetThreeLatestCreatedNews;
 
 public sealed record GetThreeLatestCreatedNewsQuery() : IQuery<Result<IEnumerable<GetThreeLatestCreatedNewsResult>>>;
 
-
 public sealed record GetThreeLatestCreatedNewsResult(
     Guid Id,
     string Title,
@@ -18,19 +17,16 @@ public sealed record GetThreeLatestCreatedNewsResult(
     string Category,
     string ProfilePhotoPath);
 
-internal sealed class GetThreeLatestCreatedNewsHandler(ApplicationDbContext dbContext) 
+internal sealed class GetThreeLatestCreatedNewsHandler(ApplicationDbContext dbContext) : IQueryHandler<GetThreeLatestCreatedNewsQuery, Result<IEnumerable<GetThreeLatestCreatedNewsResult>>>
 {
-    public async Task<Result<List<GetThreeLatestCreatedNewsResult>>> Handle(CancellationToken cancellationToken)
+    public async Task<Result<IEnumerable<GetThreeLatestCreatedNewsResult>>> Handle(GetThreeLatestCreatedNewsQuery query, CancellationToken cancellationToken)
     {
-        
         var latestNews = await dbContext.News
             .OrderByDescending(n => n.PublicationDate) 
             .Take(3)
             .ToListAsync(cancellationToken);
-
         
-        
-        var result = latestNews.Select(news => news.ToGetThreeLatestCreatedNewsResult()).ToList();
+        var result = latestNews.Select(news => news.ToGetThreeLatestCreatedNewsResult());
 
         return Result.Success(result);
     }

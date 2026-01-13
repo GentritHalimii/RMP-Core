@@ -30,7 +30,6 @@ public sealed class CreateProfessorCommandValidator : AbstractValidator<CreatePr
         RuleFor(x => x.LastName)
             .NotEmpty()
             .WithMessage("Last name is required!");
-
     }
 }
 

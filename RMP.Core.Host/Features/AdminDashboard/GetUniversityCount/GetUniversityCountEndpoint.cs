@@ -1,8 +1,6 @@
-
 using Carter;
 using MediatR;
 using RMP.Core.Host.Extensions;
-using RMP.Core.Host.Mapper;
 
 namespace RMP.Core.Host.Features.AdminDashboard.GetUniversityCount;
 

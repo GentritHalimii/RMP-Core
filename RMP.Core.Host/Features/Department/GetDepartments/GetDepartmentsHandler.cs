@@ -4,7 +4,7 @@ using RMP.Core.Host.Abstractions.ResultResponse;
 using RMP.Core.Host.Database;
 using RMP.Core.Host.Mapper;
 
-namespace RMP.Host.Features.Department.GetDepartments;
+namespace RMP.Core.Host.Features.Department.GetDepartments;
 
 public sealed record GetDepartmentsQuery() : IQuery<Result<IEnumerable<GetDepartmentsResult>>>;
 

@@ -1,9 +1,8 @@
 using Riok.Mapperly.Abstractions;
 using RMP.Core.Host.Entities;
-using RMP.Core.Host.Features.AdminDashboard.GetHighestRatedProfessor;
 using RMP.Core.Host.Features.AdminDashboard.GetOldestUniversity;
 using RMP.Core.Host.Features.AdminDashboard.GetHighestRatedUniversity;
-
+using RMP.Core.Host.Features.AdminDashboard.SortFromHighestRatedProfessor;
 
 namespace RMP.Core.Host.Mapper;
 

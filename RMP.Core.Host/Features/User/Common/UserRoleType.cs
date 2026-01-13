@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace RMP.Host.Features.User.Common;
+namespace RMP.Core.Host.Features.User.Common;
 
 public enum UserRoleType : short
 {

@@ -11,7 +11,8 @@
         <PackageReference Include="AspNetCore.HealthChecks.UI.Client" Version="8.0.1" />
         <PackageReference Include="Carter" Version="8.0.0" />
         <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="12.1.1" />
-        <PackageReference Include="MediatR" Version="14.0.0" />
+        <PackageReference Include="Grpc.AspNetCore" Version="2.76.0" />
+        <PackageReference Include="MediatR" Version="12.4.1" />
         <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.11" />
         <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="8.0.11" />
         <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.22" />
@@ -24,9 +25,11 @@
         </PackageReference>
         <PackageReference Include="Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore" Version="8.0.11" />
         <PackageReference Include="Riok.Mapperly" Version="4.1.1" />
-        <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
     </ItemGroup>
-
+    <ItemGroup>
+        <Protobuf Include="Features\Rating\Extension.PredictionService\Protos\PredictionService.proto" GrpcServices="Client" />
+    </ItemGroup>
     <ItemGroup>
       <Folder Include="wwwroot\uploads\" />
     </ItemGroup>
